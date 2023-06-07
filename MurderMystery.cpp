@@ -345,8 +345,6 @@ void MurderMystery::SolveMurderMystery() {
       } else {
         cout << RED << "NOT GUILTY" << RESET << ".";
       }
-      cout << "\n\n" << GREEN << "Press " << BOLD << "ENTER" << RESET << GREEN << " to go back to the code menu." << RESET;
-      waitForEnter();
     } else {
       clearConsole();
       cout << RED << "You did not enter a valid option for this menu.\n\n" << RESET;
