@@ -340,12 +340,19 @@ void MurderMystery::SolveMurderMystery() {
       clearConsole();
       cout << BOLD << "You selected that " << MasterCaseData.SuspectData[UserSelectionChoice].name << " was behind the murder...\n\n";
       cout << MasterCaseData.SuspectData[UserSelectionChoice].name << " is... ";
+      
+      waitForEnter();
+      
       if (MasterCaseData.SuspectSolveIndex == UserSelectionChoice) {
         cout << GREEN << "GUILTY" << RESET << ".";
       } else {
         cout << RED << "NOT GUILTY" << RESET << ".";
       }
+      
+      waitForEnter();
     } else {
+      
+      waitForEnter();
       clearConsole();
       cout << RED << "You did not enter a valid option for this menu.\n\n" << RESET;
     }
